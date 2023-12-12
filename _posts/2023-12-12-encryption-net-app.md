@@ -12,11 +12,16 @@ tags:
 New addition coming to my code repository. An Encrypter/Decrypter .NET App
 ```c#
 public class Decrypter
-
+{
+    private IFormatter _formatter;
+    private IProtocol _protocol;
+}
 ```
 
 **Info Notice:** Current supported protocols are: [Ciphersaber](#).
 {: .notice--info}
 
-Check out the [Encryption project][encryption-repo] source code repo on Github.
+Check out the [Encryption project][jekyll-docs] source code repo on Github.
+
 [encryption-repo]: https://github.com/mariogamedev/EncryptionProtocols
+[jekyll-docs]: https://jekyllrb.com/docs/home
