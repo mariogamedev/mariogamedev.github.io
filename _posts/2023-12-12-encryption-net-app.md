@@ -1,33 +1,10 @@
 ---
-title: "Encryption .NET App"
-date: 2023-12-12T19:22:00-00:00
-categories:
-  - Code
-tags:
-  - C#
-  - .NET
-  - Security
+layout: post
+title:  "Welcome to Jekyll!"
 ---
 
-New addition coming to my code repository. An Encrypter/Decrypter .NET App
-```c#
-public class Decrypter
-{
-    private IFormatter _formatter;
-    private IProtocol _protocol;
+# Welcome
 
-    public Decrypter(IProtocol protocol, IFormatter formatter)
-    {
-        _protocol = protocol;
-        _formatter = formatter;
-    }
+**Hello world**, this is my first Jekyll blog post.
 
-    public void Decrypt(string encryptedData)
-    {
-        byte[] formattedEncryption = Convert.FromHexString(_formatter.Format(encryptedData));
-        string decryptedMessage = _protocol.Decrypt(formattedEncryption);
-        Console.WriteLine(decryptedMessage);
-    }
-}
-```
-
+I hope you like it!
