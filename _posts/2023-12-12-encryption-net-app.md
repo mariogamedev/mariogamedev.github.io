@@ -15,13 +15,25 @@ public class Decrypter
 {
     private IFormatter _formatter;
     private IProtocol _protocol;
+
+    public Decrypter(IProtocol protocol, IFormatter formatter)
+    {
+        _protocol = protocol;
+        _formatter = formatter;
+    }
+
+    public void Decrypt(string encryptedData)
+    {
+        byte[] formattedEncryption = Convert.FromHexString(_formatter.Format(encryptedData));
+        string decryptedMessage = _protocol.Decrypt(formattedEncryption);
+        Console.WriteLine(decryptedMessage);
+    }
 }
 ```
 
 **Info Notice:** Current supported protocols are: [Ciphersaber](#).
 {: .notice--info}
 
-Check out the [Encryption project][jekyll-docs] source code repo on Github.
+Check out the [Encryption project][jekyll-gh] source code repo on Github.
 
-[encryption-repo]: https://github.com/mariogamedev/EncryptionProtocols
-[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]]: https://github.com/mariogamedev/EncryptionProtocols
