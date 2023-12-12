@@ -31,8 +31,3 @@ public class Decrypter
 }
 ```
 
-**Info Notice:** Current supported protocols are: [Ciphersaber](#).
-{: .notice--info}
-
-Check out the [Encryption project][encryption-repo] source code repo on Github.
-[encryption-repo]: https://github.com/mariogamedev/EncryptionProtocols
