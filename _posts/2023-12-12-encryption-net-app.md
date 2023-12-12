@@ -36,4 +36,4 @@ public class Decrypter
 
 Check out the [Encryption project][jekyll-gh] source code repo on Github.
 
-[jekyll-gh]]: https://github.com/mariogamedev/EncryptionProtocols
+[jekyll-gh]: https://github.com/mariogamedev/EncryptionProtocols
