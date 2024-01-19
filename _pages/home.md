@@ -11,7 +11,7 @@ header:
 excerpt: >
   From Entertainment to Impact: Game Developer, Tech Lead and Tech Advisor
 intro: 
-  - excerpt: 'Coding Chronicles: Crafting Meaningful Solutions with a Glimpse of Tech Leadership.'
+  - excerpt: 'Coding Chronicles: Crafting Meaningful Solutions with a Glimpse of Tech Leadership'
 feature_row:
   - image_path: /assets/images/mobile-platform.jpg
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
@@ -29,7 +29,6 @@ feature_row:
     title: "Tech Leadership"
     excerpt: "Guiding teams through changes and scaling, I specialize in maintaining established projects and leading new initiatives. My leadership emphasizes collaboration, fostering growth, and navigating the complexities of tech initiatives together."   
 ---
-
 
 {% include feature_row id="intro" type="center" %}
 

@@ -18,7 +18,7 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   Senior Game Developer and Tech Lead. Proficiency on serious games.
 github_username: mariogamedev
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: contrast
 search: true
 
 # Build settings
@@ -32,6 +32,8 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - _projects
+  - _code-samples
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -56,7 +58,7 @@ plugins:
 
 author:
   name   : "Mario Rodriguez"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/mario-profile-3.jpg"
   bio    : "Senior Game Developer and Tech Lead"
   links:
     - label: "GitHub"
@@ -74,6 +76,16 @@ footer:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/mario-rodr%C3%ADguez-murillo-037/"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  code-samples:
+    output: true
+    permalink: /:collection/:path/
+
 
 defaults:
   # _posts
@@ -94,7 +106,23 @@ defaults:
     values:
       layout: single
       author_profile: true
-
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _code-samples
+  - scope:
+      path: ""
+      type: code-samples
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      
 category_archive:
   type: liquid
   path: /categories/
