@@ -1,10 +1,5 @@
 ---
 title: "Eodyne - HealthTech"
-categories:
-  - Projects
-tags:
-  - Serious Games
-  - Health Tech
 ---
 
 Eodyne develops science-based neuro-rehabilitation technologies.

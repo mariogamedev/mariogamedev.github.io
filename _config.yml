@@ -19,7 +19,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Senior Game Developer and Tech Lead. Proficiency on serious games.
 github_username: mariogamedev
 minimal_mistakes_skin: contrast
-search: true
 
 # Build settings
 markdown: kramdown
@@ -66,7 +65,7 @@ author:
       url: "https://github.com/mariogamedev"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/mario-rodr%C3%ADguez-murillo-037/"
+      url: "https://www.linkedin.com/in/mario-gamedev
 
 footer:
   links:
@@ -75,7 +74,7 @@ footer:
       url: "https://github.com/mariogamedev"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/mario-rodr%C3%ADguez-murillo-037/"
+      url: "https://www.linkedin.com/in/mario-gamedev"
 
 # Collections
 collections:
