@@ -1,0 +1,138 @@
+---
+title: "Gravitational Physics .NET App"
+layout: single
+author_profile: false
+classes: wide
+---
+
+<style>
+  .page__content {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Hide auto-generated page title */
+  .page__title {
+    display: none !important;
+  }
+
+  /* Hide footer social links */
+  .page__footer-follow {
+    display: none !important;
+  }
+
+  /* Hide previous/next navigation */
+  .page__related {
+    display: none !important;
+  }
+
+  .pagination {
+    display: none !important;
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2em !important;
+    }
+    .hero-subtitle {
+      font-size: 1.1em !important;
+    }
+    .hero-content {
+      padding: 20px 25px !important;
+    }
+    .section-title {
+      font-size: 1.5em !important;
+    }
+  }
+</style>
+
+<!-- Hero Section -->
+<div style="height: 250px; background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%); display: flex; align-items: center; justify-content: center; margin: 0;">
+  <div class="hero-content" style="text-align: center; color: white; max-width: 900px; padding: 25px 30px; background: rgba(0, 0, 0, 0.3); border-radius: 15px; backdrop-filter: blur(5px);">
+    <h1 class="hero-title" style="font-size: 3em; margin: 0 0 15px 0; font-weight: 700; text-shadow: 2px 2px 12px rgba(0,0,0,0.7), 0 0 20px rgba(0,0,0,0.5);">Gravitational Physics .NET App</h1>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div style="max-width: 1000px; margin: 60px auto; padding: 0 20px;">
+
+  <!-- Description -->
+  <div style="margin-bottom: 50px;">
+    <h2 class="section-title" style="font-size: 2em; color: #333; margin-bottom: 20px;">About this Project</h2>
+    <p style="font-size: 1.1em; line-height: 1.8; color: #666; margin-bottom: 20px;">
+      A physics simulation app that demonstrates gravitational field effects between celestial bodies. Built with C# and .NET, it calculates how planets and meteors influence each other's trajectories.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8; color: #666;">
+      The implementation focuses on clean architecture with dependency injection, making the code extensible and easy to test. It's a practical example of applying SOLID principles to computational physics.
+    </p>
+  </div>
+
+  <!-- Code Snippet -->
+  <div style="margin-bottom: 50px;">
+    <h2 class="section-title" style="font-size: 2em; color: #333; margin-bottom: 20px;">Code Sample</h2>
+    <p style="font-size: 1.1em; line-height: 1.8; color: #666; margin-bottom: 20px;">
+      Here's the core solver class that handles the gravitational calculations:
+    </p>
+
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea; overflow-x: auto;">
+{% highlight csharp %}
+namespace GravitationalFieldEstimator
+{
+    public class Solver
+    {
+        private readonly float _gravitationalConstant;
+
+        private IStatementParser _statementParser;
+        private IGravitationalMovable _gravitationalMover;
+
+        public Solver(IStatementParser statementParser, float gravitationalConstant)
+        {
+            _statementParser = statementParser;
+            _gravitationalConstant = gravitationalConstant;
+        }
+
+        public void Initialize()
+        {
+            _statementParser.Parse();
+            GravitationalField field = new GravitationalField(_gravitationalConstant);
+            _gravitationalMover = new UniformGravitationalMover(field, _statementParser.Planet, _statementParser.Meteor);
+        }
+
+        public void Solve()
+        {
+            foreach (Vector2D timeEntry in _statementParser.TimeDistribution)
+            {
+                for (int i = 0; i < timeEntry.Y; i++)
+                {
+                    Vector2D estimatedPosition = _gravitationalMover.EstimatePosition(timeEntry.X);
+                    Console.WriteLine($"{estimatedPosition.X:F2} {estimatedPosition.Y:F2}");
+                }
+            }
+        }
+    }
+}
+{% endhighlight %}
+    </div>
+  </div>
+
+  <!-- GitHub Link -->
+  <div style="margin-bottom: 50px;">
+    <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; text-align: center;">
+      <p style="font-size: 1.1em; color: #666; margin: 0 0 15px 0;">
+        Check out the full source code on GitHub
+      </p>
+      <a href="https://github.com/mariogamedev/GravitationalFieldEstimator" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)'">
+        View on GitHub
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Back to Code Samples -->
+<div style="text-align: center; margin: 60px 0 40px 0;">
+  <a href="/code-samples/" style="display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 15px 35px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 1em; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.3)'">
+    ← Back to Code Samples
+  </a>
+</div>

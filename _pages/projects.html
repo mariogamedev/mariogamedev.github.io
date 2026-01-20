@@ -11,12 +11,21 @@ classes: wide
     padding: 0 !important;
     margin: 0 !important;
   }
+
+  @media (max-width: 768px) {
+    .projects-title {
+      font-size: 2em !important;
+    }
+    .projects-subtitle {
+      font-size: 1.1em !important;
+    }
+  }
 </style>
 
 <div style="padding: 40px 20px 20px; margin: 0; width: 100%;">
   <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-    <h1 style="font-size: 3em; color: #333; margin: 0 0 20px 0; font-weight: 600;">Projects</h1> 
-    <p style="font-size: 1.3em; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">
+    <h1 class="projects-title" style="font-size: 3em; color: #333; margin: 0 0 20px 0; font-weight: 600;">Projects</h1>
+    <p class="projects-subtitle" style="font-size: 1.3em; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">
       Building impactful solutions across <strong style="color: #667eea;">EdTech</strong>, <strong style="color: #764ba2;">HealthTech</strong>, <strong style="color: #e65100;">Culture</strong>, and <strong style="color: #c2185b;">Entertainment</strong>
     </p>
   </div>
@@ -30,7 +39,7 @@ classes: wide
     <a href="/projects/Eodyne/" style="text-decoration: none; color: inherit; display: block; position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; background: white;" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 30px rgba(102, 126, 234, 0.3)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
 
       <!-- Project Image -->
-      <div style="height: 200px; background: linear-gradient(135deg, rgba(102, 126, 234, 0.50), rgba(118, 75, 162, 0.50)), url('/assets/images/eodyne-rgs.webp'); background-size: cover; background-position: center; position: relative;">
+      <div style="height: 200px; background: linear-gradient(135deg, rgba(102, 126, 234, 0.40), rgba(118, 75, 162, 0.40)), url('/assets/images/eodyne-rgs.webp'); background-size: cover; background-position: center; position: relative;">
         <!-- Category Badge -->
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 6px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 600; color: #764ba2;">HealthTech</div>
       </div>
@@ -64,7 +73,7 @@ classes: wide
     <a href="/projects/Innovamat/" style="text-decoration: none; color: inherit; display: block; position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; background: white;" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 30px rgba(118, 75, 162, 0.3)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
 
       <!-- Project Image -->
-      <div style="height: 200px; background: linear-gradient(135deg, rgba(118, 75, 162, 0.50), rgba(102, 126, 234, 0.50)), url('/assets/images/bmath-primaria.png'); background-size: cover; background-position: center; position: relative;">
+      <div style="height: 200px; background: linear-gradient(135deg, rgba(118, 75, 162, 0.40), rgba(102, 126, 234, 0.40)), url('/assets/images/bmath-primaria.png'); background-size: cover; background-position: center; position: relative;">
         <!-- Category Badge -->
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 6px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 600; color: #667eea;">EdTech</div>
       </div>
@@ -97,7 +106,7 @@ classes: wide
     <a href="/projects/Univrse/" style="text-decoration: none; color: inherit; display: block; position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; background: white;" onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 12px 30px rgba(102, 126, 234, 0.3)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
 
       <!-- Project Image -->
-      <div style="height: 200px; background: linear-gradient(135deg, rgba(102, 126, 234, 0.50), rgba(118, 75, 162, 0.50)), url('/assets/images/xroam.png'); background-size: cover; background-position: center; position: relative;">
+      <div style="height: 200px; background: linear-gradient(135deg, rgba(102, 126, 234, 0.40), rgba(118, 75, 162, 0.40)), url('/assets/images/xroam.png'); background-size: cover; background-position: center; position: relative;">
         <!-- Category Badge -->
         <div style="position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.95); padding: 6px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 600; color: #c2185b;">Entertainment</div>
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 6px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 600; color: #e65100;">Culture</div>
@@ -132,7 +141,7 @@ classes: wide
     <a href="#" style="text-decoration: none; color: inherit; display: block; position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); ">
 
       <!-- Project Image -->
-      <div style="height: 200px; background: linear-gradient(135deg, rgba(118, 75, 162, 0.50), rgba(102, 126, 234, 0.50)), url('/assets/images/work-in-progress.png'); background-size: cover; background-position: center; position: relative;">
+      <div style="height: 200px; background: linear-gradient(135deg, rgba(118, 75, 162, 0.40), rgba(102, 126, 234, 0.40)), url('/assets/images/work-in-progress.png'); background-size: cover; background-position: center; position: relative;">
         <!-- Category Badge -->
         <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.95); padding: 6px 14px; border-radius: 15px; font-size: 0.75em; font-weight: 600; color: #c2185b;">Entertainment</div>
       </div>

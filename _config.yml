@@ -67,14 +67,14 @@ author:
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/mario-gamedev"
 
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mariogamedev"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://www.linkedin.com/in/mario-gamedev"
+# footer:
+#   links:
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github"
+#       url: "https://github.com/mariogamedev"
+#     - label: "Linkedin"
+#       icon: "fab fa-fw fa-linkedin-in"
+#       url: "https://www.linkedin.com/in/mario-gamedev"
 
 # Collections
 collections:

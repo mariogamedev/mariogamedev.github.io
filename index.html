@@ -10,6 +10,35 @@ excerpt: >
   <span style="color: white;">Senior Unity Developer & Tech Lead</span>
 ---
 
+<style>
+  @media (max-width: 768px) {
+    .profile-grid {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+      text-align: center;
+    }
+    .profile-photo {
+      width: 150px !important;
+      height: 150px !important;
+    }
+    .profile-title {
+      font-size: 1.6em !important;
+    }
+    .stats-number {
+      font-size: 2.5em !important;
+    }
+    .journey-title {
+      font-size: 1.8em !important;
+    }
+    .timeline-container {
+      padding-left: 30px !important;
+    }
+    .timeline-dot {
+      left: -28px !important;
+    }
+  }
+</style>
+
 <!-- Wave Divider -->
 <div style="position: relative; margin-top: -1px; margin-bottom: -50px;">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" style="display: block; width: 100%; height: auto;">
@@ -21,11 +50,11 @@ excerpt: >
   <div style="max-width: 1100px; margin: 0 auto;">
 
     <!-- Profile Section with Photo + Statement -->
-    <div style="display: grid; grid-template-columns: 200px 1fr; gap: 50px; align-items: center; margin-bottom: 20px;">
+    <div class="profile-grid" style="display: grid; grid-template-columns: 200px 1fr; gap: 50px; align-items: center; margin-bottom: 20px;">
 
       <!-- Profile Photo -->
       <div style="text-align: center;">
-        <img src="/assets/images/mario-profile-3.jpg" alt="Mario Rodriguez" style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid #667eea; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); object-fit: cover;">
+        <img src="/assets/images/mario-profile-3.jpg" alt="Mario Rodriguez" class="profile-photo" style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid #667eea; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3); object-fit: cover;">
 
         <!-- Social Links -->
         <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px;">
@@ -40,7 +69,7 @@ excerpt: >
 
       <!-- Statement -->
       <div>
-        <h2 style="font-size: 2em; color: #333; margin: 0 0 20px 0; font-weight: 600; line-height: 1.3;">
+        <h2 class="profile-title" style="font-size: 2em; color: #333; margin: 0 0 20px 0; font-weight: 600; line-height: 1.3;">
           Creating great software with great teams
         </h2>
         <p style="font-size: 1.15em; color: #666; line-height: 1.8; margin: 0;">
@@ -56,33 +85,33 @@ excerpt: >
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
 
       <div style="padding: 20px;">
-        <div style="font-size: 3.5em; font-weight: bold; color: #fff; margin-bottom: 10px;">10+</div>
+        <div class="stats-number" style="font-size: 3.5em; font-weight: bold; color: #fff; margin-bottom: 10px;">10+</div>
         <div style="font-size: 1.1em; color: #f0f0f0; text-transform: uppercase; letter-spacing: 2px;">Years Experience</div>
       </div>
 
       <div style="padding: 20px;">
-        <div style="font-size: 3.5em; font-weight: bold; color: #fff; margin-bottom: 10px;">15+</div>
+        <div class="stats-number" style="font-size: 3.5em; font-weight: bold; color: #fff; margin-bottom: 10px;">15+</div>
         <div style="font-size: 1.1em; color: #f0f0f0; text-transform: uppercase; letter-spacing: 2px;">Shipped Projects</div>
       </div>
 
       <div style="padding: 20px;">
-        <div style="font-size: 3.5em; font-weight: bold; color: #fff; margin-bottom: 10px;">4M+</div>
+        <div class="stats-number" style="font-size: 3.5em; font-weight: bold; color: #fff; margin-bottom: 10px;">4M+</div>
         <div style="font-size: 1.1em; color: #f0f0f0; text-transform: uppercase; letter-spacing: 2px;">Users Reached</div>
       </div>
     </div>
   </div>
 </div>
 
-<div style="max-width: 1000px; margin: 60px auto;">
-  <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 50px; color: #333;">My Journey</h2>
+<div style="max-width: 1000px; margin: 60px auto; padding: 0 20px;">
+  <h2 class="journey-title" style="text-align: center; font-size: 2.5em; margin-bottom: 50px; color: #333;">My Journey</h2>
 
-  <div style="position: relative; padding-left: 50px;">
+  <div class="timeline-container" style="position: relative; padding-left: 50px;">
     <!-- Vertical line -->
     <div style="position: absolute; left: 20px; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);"></div>
 
     <!-- Timeline Item 1: Backend Developer -->
     <div style="position: relative; margin-bottom: 50px;">
-      <div style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
+      <div class="timeline-dot" style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
       <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border: 2px solid #1976d2;">
         <div style="color: #667eea; font-weight: bold; font-size: 0.9em; margin-bottom: 5px;">2016 - 2018</div>
         <h3 style="margin: 0 0 10px 0; font-size: 1.5em; color: #333;">Backend Developer</h3>
@@ -98,7 +127,7 @@ excerpt: >
 
     <!-- Timeline Item 2: QA Tester -->
     <div style="position: relative; margin-bottom: 50px;">
-      <div style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
+      <div class="timeline-dot" style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
       <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border: 2px solid #7b1fa2;">
         <div style="color: #667eea; font-weight: bold; font-size: 0.9em; margin-bottom: 5px;">2018 - 2018</div>
         <h3 style="margin: 0 0 10px 0; font-size: 1.5em; color: #333;">QA Tester</h3>
@@ -114,7 +143,7 @@ excerpt: >
 
     <!-- Timeline Item 3: Unity Developer -->
     <div style="position: relative; margin-bottom: 50px;">
-      <div style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
+      <div class="timeline-dot" style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
       <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border: 2px solid #388e3c;">
         <div style="color: #667eea; font-weight: bold; font-size: 0.9em; margin-bottom: 5px;">2018 - 2022</div>
         <h3 style="margin: 0 0 10px 0; font-size: 1.5em; color: #333;">Unity Developer</h3>
@@ -132,11 +161,11 @@ excerpt: >
 
     <!-- Timeline Item 4: University Professor -->
     <div style="position: relative; margin-bottom: 20px;">
-      <div style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #764ba2; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #764ba2;"></div>
+      <div class="timeline-dot" style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #764ba2; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #764ba2;"></div>
       <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border: 2px solid #764ba2;">
         <div style="color: #764ba2; font-weight: bold; font-size: 0.9em; margin-bottom: 5px;">2024 - 2025</div>
         <h3 style="margin: 0 0 10px 0; font-size: 1.5em; color: #333;">University Professor</h3>
-        <p style="margin: 0 0 15px 0; color: #666; line-height: 1.6;">Teaching the next generation of developers at the university level. Focused on AI fundamentals, algorithms, and Python programming—bridging theory with practical applications from my industry experience.</p>
+        <p style="margin: 0 0 15px 0; color: #666; line-height: 1.6;">Teaching AI Foundations to the next generation of developers at the Universitat Autonoma de Barcelona. Focused on AI fundamentals, algorithms, and Python programming—bridging theory with practical applications from my industry experience.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
           <span style="background: #fce4ec; color: #c2185b; padding: 5px 12px; border-radius: 15px; font-size: 0.85em;">AI Fundamentals</span>
           <span style="background: #fce4ec; color: #c2185b; padding: 5px 12px; border-radius: 15px; font-size: 0.85em;">Algorithms</span>
@@ -148,7 +177,7 @@ excerpt: >
 
  <!-- Timeline Item 5: Tech Lead -->
     <div style="position: relative; margin-bottom: 50px;">
-      <div style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
+      <div class="timeline-dot" style="position: absolute; left: -38px; top: 5px; width: 20px; height: 20px; background: #667eea; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 2px #667eea;"></div>
       <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border: 2px solid #e65100;">
         <div style="color: #667eea; font-weight: bold; font-size: 0.9em; margin-bottom: 5px;">2022 - Present</div>
         <h3 style="margin: 0 0 10px 0; font-size: 1.5em; color: #333;">Tech Lead</h3>
